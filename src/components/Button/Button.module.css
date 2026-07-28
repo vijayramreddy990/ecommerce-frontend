@@ -1,0 +1,161 @@
+/* ===========================
+   Base Button
+=========================== */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+
+  user-select: none;
+
+  white-space: nowrap;
+}
+
+/* ===========================
+   Variants
+=========================== */
+
+.primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.primary:hover {
+  background-color: #1d4ed8;
+}
+
+.secondary {
+  background-color: #6b7280;
+  color: #ffffff;
+}
+
+.secondary:hover {
+  background-color: #4b5563;
+}
+
+.success {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.success:hover {
+  background-color: #15803d;
+}
+
+.danger {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.danger:hover {
+  background-color: #b91c1c;
+}
+
+.warning {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.warning:hover {
+  background-color: #d97706;
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.outline:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* ===========================
+   Sizes
+=========================== */
+
+.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* ===========================
+   Modifiers
+=========================== */
+
+.fullWidth {
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 999px;
+}
+
+.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.loading {
+  cursor: wait;
+  opacity: 0.75;
+}
+
+/* ===========================
+   States
+=========================== */
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   Text
+=========================== */
+
+.text {
+  display: inline-flex;
+  align-items: center;
+}
